@@ -1,0 +1,22 @@
+{
+  "extends": "airbnb",
+  "plugins": ["jest"],      // enable eslint-plugin-jest
+  "env":{
+    "jest/globals": true,   // allow jest global such as describe & it
+    "browser": true,        // allow document. 
+    "node": true,
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error", { "devDependencies": true }, // allow devDependencies in package.json
+    ],
+    "linebreak-style": [0],     // Linux/Windows CRLF problem
+    "no-multi-spaces": [1],
+    "no-plusplus": ["error", {"allowForLoopAfterthoughts": true}],
+    "no-unused-vars": ["error", {"argsIgnorePattern": "next"}],  // ignore next in (req,res,next)
+    "no-use-before": [0],
+    "no-use-before-define": [0],
+    "react/prop-types": [1],      // TEMPORACY disable react "missing in props validation"
+    "spaced-comment": [1]
+  }
+}

@@ -1,0 +1,143 @@
+body{
+    font-family: Arial, "Times New Roman", KaiTi, SimSun, "Microsoft Yahei";
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+.form-control::-webkit-input-placeholder {color: #D8D8D8 } 
+.form-control::-moz-placeholder {color: #D8D8D8 } 
+.form-control:-ms-input-placeholder {color: #D8D8D8 } 
+.form-control:-moz-placeholder {color: #D8D8D8 } 
+
+/* Spinner */
+.loader-wrapper {
+  overflow: hidden;
+  position: fixed;
+  top: 100px;
+  z-index: 90;
+  width: 100%;
+  text-align: center;
+  display: none;
+
+  .loader-box {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+
+    .loader,
+    .loader:after {
+      border-radius: 50%;
+      width: 90%;
+      height: 90%;
+    }
+
+    .loader {
+      margin: 0;
+      font-size: 5px;
+      position: relative;
+      text-indent: -9999em;
+      border-top: 1.1em solid rgba(155,155,155, 0.2);
+      border-right: 1.1em solid rgba(155,155,155, 0.2);
+      border-bottom: 1.1em solid rgba(155,155,155, 0.2);
+      border-left: 1.1em solid #0808;
+      -webkit-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-animation: load8 1.1s infinite linear;
+      animation: load8 1s infinite linear;
+    }
+
+    @-webkit-keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  } /* loader-box */
+} /* loader-wrapper */
+
+/* Flexbox tables */
+/* 2018-04-01 no need to use flexbox, we don't have two tables in a page */
+/* table.flex {
+  tr {
+    display: flex;
+
+    th ,td {
+      flex-basis: 25%;
+
+      &.thumb {
+        flex-basics:auto;
+        width: 100px;
+        text-align: center;
+        padding: 10px;
+
+        img {
+          width: 80px;
+        }
+      }
+    }
+  }
+} */
+
+.alert {
+  margin: 0.2rem;
+  padding: 0.2rem 1.0rem;
+}
+
+.alert-dismissible .close {
+  position: relative;
+  top: 0;
+  right: 0;
+  padding: 0 0;
+  color: inherit;
+}
+
+
+.two-row-table tr {
+  background: #FFFFFF;
+}
+
+.two-row-table tr:nth-child(4n+1), .two-row-table tr:nth-child(4n+2) {
+    /* Example color */
+    background: #F2F2F2;
+}
+
+.two-row-table tr:hover {background-color: #ddd;}
+
+.two-row-table th {
+  background: #FFFFFF;
+}
+
+.dialog-box {
+  background: #E2FBE0;
+}
+
+.float_center {
+  float: right;
+
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
+.float_center > .child {
+  position: relative;
+  left: 50%;
+}

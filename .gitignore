@@ -1,0 +1,33 @@
+# Temp Folder
+/#temp
+
+# Application Configuration
+config.json
+
+# Log File
+logs
+*.logs
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# snyk
+.snyk
+
+# Compiled binary addons
+#/build
+
+# Dependency directories
+/node_modules
+
+# Optional npm cache directory
+
+# React production build
+/public/javascripts
+/public/stylesheets
+
+# Service Works
+/public/service-worker.js
